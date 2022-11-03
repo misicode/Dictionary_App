@@ -1,0 +1,32 @@
+.card {
+    color: var(--white);
+    background: var(--bg-header);
+    box-shadow: 1px 2px var(--shadow);
+}
+
+.img-title {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px 0 80px;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card .content p:nth-child(1) {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.card .content p:nth-child(3) {
+    padding-top: 3px;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.svg-wave path {
+    fill: var(--bg-header);
+}

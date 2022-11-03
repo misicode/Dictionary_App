@@ -1,0 +1,24 @@
+:root {
+    --auxiliar-color: rgba(255, 255, 255, 0.25);
+    --auxiliar-hover-color: rgba(255, 255, 255, 0.45);
+    --toggle-dark-bar: rgba(255, 255, 255, 0.4);
+    --toggle-light-bar: #625ad3;
+    --input-bar: rgba(0, 0, 0, 0.15);
+
+    --shadow: #2020203d;
+    --gray: #ffffffba;
+    --white: #fff;
+}
+
+.light-theme {
+    --bg-header: #2c1b64;
+    --bg-card: #ebebeb;
+}
+  
+.dark-theme {
+    --bg-header: #1c2034;
+    --bg-card: #262c46;
+
+    background: #21263d;
+    color: var(--white);
+}
