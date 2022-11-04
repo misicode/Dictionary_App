@@ -7,7 +7,10 @@ import './Header.css';
 
 export default function Header() {
     const [darkTheme, setDarkTheme] = useState(
-        (localStorage.getItem('dictionary-theme') === 'dark-theme') ? true : false
+        localStorage.getItem('dictionary-theme') ?
+            (localStorage.getItem('dictionary-theme') === 'dark-theme') ? true : false
+            :
+            true
     );
 
     return (
