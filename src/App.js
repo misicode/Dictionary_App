@@ -1,4 +1,5 @@
 import Dictionary from "./pages/Dictionary";
+import Footer from "./parts/Footer/Footer";
 import Header from "./parts/Header/Header";
 
 import './assets/Variables.css';
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Dictionary />
+      <Footer />
     </div>
   );
 }

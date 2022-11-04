@@ -13,6 +13,7 @@
     --secondary: #341d80;
     --auxiliar: rgba(165, 165, 165, 0.25);
     --auxiliar-hover: rgba(165, 165, 165, 0.45);
+    --font-primary: #341d80;
     --font-auxiliar: #393939;
 
     --bg-card: #ebebeb;
@@ -23,6 +24,7 @@
     --secondary: #191d2f;
     --auxiliar: rgba(94, 94, 94, 0.25);
     --auxiliar-hover: rgba(94, 94, 94, 0.45);
+    --font-primary: #fff;
     --font-auxiliar: #cccccc;
 
     --bg-card: #262c46;
