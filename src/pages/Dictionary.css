@@ -1,14 +1,14 @@
 .card {
     color: var(--white);
-    background: var(--bg-header);
-    box-shadow: 1px 2px var(--shadow);
+    background: var(--primary);
+    box-shadow: 1px 2px var(--black-shadow);
 }
 
 .img-title {
     display: block;
-    width: 350px;
+    width: 360px;
     margin: 0 auto;
-    padding: 30px 0 80px;
+    padding: 50px 0 100px;
 }
 
 .content {
@@ -22,11 +22,12 @@
 }
 
 .card .content p:nth-child(3) {
-    padding-top: 3px;
+    padding-top: 5px;
     font-size: 12px;
-    color: var(--gray);
+    color: var(--white-shadow);
+    text-align: right;
 }
 
 .svg-wave path {
-    fill: var(--bg-header);
+    fill: var(--primary);
 }

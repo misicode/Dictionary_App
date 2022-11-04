@@ -7,4 +7,4 @@ export default function ToggleTheme(props) {
             <span className="slider round"></span>
         </label>
     );
-}  
+}

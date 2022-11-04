@@ -1,4 +1,3 @@
-import '../../assets/Variables.css';
 import './Meaning.css';
 
 export default function Meaning(props) {
@@ -7,8 +6,14 @@ export default function Meaning(props) {
             <h3>{ props.data.partOfSpeech }</h3>
             { props.data.definitions.map((def, index) => {
                 return (
-                    <div key={ index }>
-                        <p>{ def.definition }</p>
+                    <div key={ index } className="row-def">
+                        <p>{ index + 1 }</p>
+                        <div className="def-content">
+                            <p>{ def.definition }</p>
+                            {
+                                (def.example) ? <p>Example: { def.example }</p> : null
+                            }
+                        </div>
                     </div>
                 );
             })}

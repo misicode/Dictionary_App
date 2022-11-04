@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-import Results from "../components/Results/Results";
+import Results from "../parts/Results/Results";
 import SearchBar from "../components/SearchBar/SearchBar";
 
 import './Dictionary.css';
