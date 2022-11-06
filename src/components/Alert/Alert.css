@@ -1,0 +1,8 @@
+.Toastify {
+    font-size: 14px;
+    --toastify-icon-color-error: var(--error);
+}
+
+.Toastify__toast-theme--dark {
+    background: var(--primary-hover);
+}

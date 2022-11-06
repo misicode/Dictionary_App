@@ -24,3 +24,21 @@
     font-size: 14px;
     color: var(--font-auxiliar);
 }
+
+@media only screen and (max-width: 768px) {
+    .result-meaning h3 {
+        font-size: 19px;
+    }
+
+    .row-def > p:nth-child(1) {
+        font-size: 12.5px;
+    }
+    
+    .def-content > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .def-content > p:nth-child(2) {
+        font-size: 13px;
+    }
+}

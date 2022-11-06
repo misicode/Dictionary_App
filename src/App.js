@@ -1,6 +1,6 @@
 import Dictionary from "./pages/Dictionary";
-import Footer from "./parts/Footer/Footer";
-import Header from "./parts/Header/Header";
+import Footer from "./layouts/Footer/Footer";
+import Header from "./layouts/Header/Header";
 
 import './assets/Variables.css';
 import './App.css';

@@ -25,3 +25,14 @@
     -ms-transform: translateY(-12px);
     -webkit-transform: translateY(-12px);
 }
+
+@media only screen and (max-width: 768px) {
+    .photos-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .photo:nth-of-type(n+7) {
+        display: none;
+    }
+}

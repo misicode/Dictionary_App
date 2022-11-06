@@ -23,8 +23,9 @@ button[type="submit"] {
 input[type="search"] {
     width: 100%;
     padding: 15px 20px;
+    font-family: var(--font-keyword);
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--white);
     background: var(--input-bar);
     border: none;

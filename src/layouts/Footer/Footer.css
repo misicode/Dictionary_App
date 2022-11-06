@@ -1,0 +1,26 @@
+.credits {
+    margin: 25px 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--font-auxiliar);
+    text-align: center;
+}
+
+.credits > a {
+    font-weight: 700;
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .credits {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .credits {
+        margin: 25px 3rem 15px;
+        font-size: 12px;
+    }
+}

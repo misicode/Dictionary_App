@@ -3,22 +3,15 @@ import Meaning from '../../components/Meaning/Meaning';
 import './Results.css';
 
 export default function Results(props) {
-
     function handlePlay() {
-        for (let i in props.results.phonetics) {
-            if (props.results.phonetics[i].audio !== '') {
-                const audio = new Audio(props.results.phonetics[i].audio);
-                audio.play();
-                break;
-            }
-        }
+        (props.audio).play();
     }
 
     if (props.results) {
         return (
             <>
                 <div className="result-word">
-                    <button onClick={ handlePlay }>
+                    <button onClick={ handlePlay } className={ props.audio ? "" : "btn-block" } disabled={ props.audio ? false : true } type="button" >
                         <i className="fa-solid fa-volume-high"></i>
                     </button>
                     <h2>{ props.results.word }</h2>

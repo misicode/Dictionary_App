@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { themes, ThemeContext } from "../../context/ThemeContext";
+import { themes, ThemeContext } from "../../providers/ThemeContext";
 import ToggleTheme from '../../components/ToggleTheme/ToggleTheme';
 
 import './Header.css';

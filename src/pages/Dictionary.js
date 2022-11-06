@@ -1,8 +1,10 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
+import Alert from "../components/Alert/Alert";
 import Photos from "../components/Photos/Photos";
-import Results from "../parts/Results/Results";
+import Results from "../layouts/Results/Results";
 import SearchBar from "../components/SearchBar/SearchBar";
 
 import './Dictionary.css';
@@ -10,16 +12,16 @@ import './Dictionary.css';
 function Dictionary() {
   const [keyword, setKeyword] = useState("");
   const [dictionaryData, setDictionaryData] = useState(null);
+  const [audio, setAudio] = useState(null);
   const [photosData, setPhotosData] = useState(null);
 
   function handleDictionaryResponse(response) {
-    console.log(response)
     setDictionaryData(response.data[0]);
+    searchAudio(response.data[0].phonetics);
     searchPhotos();
   }
 
   function handlePhotosResponse(response) {
-    console.log(response)
     setPhotosData(response.data.photos);
   }
 
@@ -38,7 +40,11 @@ function Dictionary() {
 
     axios.get(apiUrl)
       .then(handleDictionaryResponse)
-      .catch(err => console.error(err));
+      .catch(err => {
+        if (err.response.status === 404) {
+          toast.error("Keyword not found");
+        }
+      });
   }
 
   function searchPhotos() {
@@ -51,8 +57,20 @@ function Dictionary() {
       .catch(err => console.error(err));
   }
 
+  function searchAudio(phonetics) {
+    for (let i in phonetics) {
+      if (phonetics[i].audio !== '') {
+        const audio = new Audio(phonetics[i].audio);
+        setAudio(audio);
+        return;
+      }
+    }
+    setAudio(null);
+  }
+
   return (
     <>
+      <Alert />
       <div className="card">
         <img src="title.png" alt="title_logo" className="img-title" />
         <div className="content">
@@ -65,7 +83,7 @@ function Dictionary() {
         <path d="M 0,350 C 0,350 0,200 0,200 C 249.5,172 499,144 739,144 C 979,144 1209.5,172 1440,200 C 1440,200 1440,350 1440,350 Z" stroke="none" strokeWidth="0" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
       </svg>
       <div className="content">
-        <Results results={ dictionaryData } />
+        <Results results={ dictionaryData } audio={ audio } />
       </div>
       <Photos photos={ photosData } />
     </>

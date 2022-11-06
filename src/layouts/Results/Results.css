@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.btn-block {
+    cursor: not-allowed !important;
+}
+
 .result-word h2 {
     font-size: 32px;
 }
@@ -36,4 +40,14 @@
 
 .syn-content > strong {
     font-size: 14.5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .syn-content {
+        font-size: 13px;
+    }
+    
+    .syn-content > strong {
+        font-size: 13.5px;
+    }
 }
