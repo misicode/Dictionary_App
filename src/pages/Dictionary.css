@@ -4,11 +4,15 @@
     box-shadow: 1px 2px var(--black-shadow);
 }
 
+.card-img {
+    height: 250px;
+    padding: 50px 0 70px;
+}
+
 .img-title {
     display: block;
     width: 360px;
     margin: 0 auto;
-    padding: 50px 0 100px;
 }
 
 .content {
@@ -33,6 +37,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .card-img {
+        height: 240px;
+    }
+
     .img-title {
         width: 330px;
         padding-bottom: 90px;
@@ -40,6 +48,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .card-img {
+        height: 220px;
+    }
+
     .img-title {
         width: 280px;
         padding-bottom: 75px;
@@ -51,6 +63,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .card-img {
+        height: 200px;
+    }
+
     .img-title {
         width: 230px;
         padding-bottom: 50px;

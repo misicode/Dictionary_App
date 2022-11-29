@@ -72,7 +72,9 @@ function Dictionary() {
     <>
       <Alert />
       <div className="card">
-        <img src="title.png" alt="title_logo" className="img-title" />
+        <div className="card-img">
+          <img src="title.png" alt="title_logo" className="img-title" />
+        </div>
         <div className="content">
           <p>Enter the word you want to search for:</p>
           <SearchBar onChange={ handleKeyword } onSubmit={ handleSubmit } />
