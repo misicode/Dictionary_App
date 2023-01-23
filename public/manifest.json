@@ -11,6 +11,16 @@
       "src": "favicon.png",
       "type": "image/png",
       "sizes": "534x537"
+    },
+    {
+      "src": "dictionary_lightmode.gif",
+      "type": "image/gif",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "wdictionary_darkmode.gif",
+      "type": "image/gif",
+      "sizes": "1920x1080"
     }
   ],
   "start_url": ".",
