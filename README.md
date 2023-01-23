@@ -13,6 +13,8 @@ Aplicación de diccionario que permite realizar la búsqueda de palabras en ingl
 
 <img src="./public/dictionary_lightmode.gif" />
 
+<img src="./public/dictionary_darkmode.gif" />
+
 ## Más información
 
 <p align="center">
