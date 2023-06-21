@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { lazy, useState } from 'react';
 
-import { 
+import {
   PhotosSection,
   ResultsSection,
   SearchBar,
@@ -9,6 +9,8 @@ import { useDictionaryData } from '../hooks/useDictionaryData';
 import { usePhotosData } from '../hooks/usePhotosData';
 
 import "./Dictionary.css";
+
+const Alert = lazy(() => import("../components").then(({ Alert }) => ({ default: Alert })));
 
 const Dictionary = () => {
   const [word, setWord] = useState<string>("");
@@ -21,9 +23,10 @@ const Dictionary = () => {
 
   return (
     <>
+      <Alert />
       <div className="card">
         <div className="card-img">
-          <img src="title.webp" alt="title_logo" className="img-title" />
+          <img src="title.webp" alt="title_logo" className="img-title" width="100%" height="100%" />
         </div>
         <div className="content">
           <p>Enter the word you want to search for:</p>

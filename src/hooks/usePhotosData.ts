@@ -9,7 +9,7 @@ export const usePhotosData = (word: string) => {
   const getPhotosData = async () => {
     const data = await searchPhotos(word);
     
-    if (!data) return;
+    if (!data || (data.photos).length === 0) return;
 
     // Asigna los datos de las fotos
     setPhotosData({
