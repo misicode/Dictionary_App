@@ -3,3 +3,13 @@ header {
   text-align: right;
   background: var(--primary);
 }
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 40px 3.5rem 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 30px 2.5rem 0;
+  }
+}

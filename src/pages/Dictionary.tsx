@@ -5,8 +5,10 @@ import {
   ResultsSection,
   SearchBar,
 } from "../components";
-import { useDictionaryData } from '../hooks/useDictionaryData';
-import { usePhotosData } from '../hooks/usePhotosData';
+import {
+  useDictionaryData,
+  usePhotosData,
+} from "../hooks";
 
 import "./Dictionary.css";
 

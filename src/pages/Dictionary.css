@@ -3,12 +3,12 @@
   background: var(--primary);
 }
 .card-img {
-  height: 230px;
-  padding: 40px 0 60px;
+  height: 14.5rem;
+  padding: 2rem 0 3.5rem;
 }
 .img-title {
   display: block;
-  width: 360px;
+  width: auto;
   margin: 0 auto;
 }
 .content {
@@ -30,37 +30,32 @@
 }
 @media only screen and (max-width: 1024px) {
   .card-img {
-    height: 240px;
-  }
-  .img-title {
-    width: 330px;
-    padding-bottom: 90px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .card-img {
-    height: 220px;
-  }
-  .img-title {
-    width: 280px;
-    padding-bottom: 75px;
+    height: 13.5rem;
   }
   .card .content p:nth-child(1) {
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .card-img {
+    height: 12.5rem;
+  }
+  .card .content p:nth-child(1) {
+    font-size: 14px;
+  }
+  .content, .photos-card {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 480px) {
   .card-img {
-    height: 200px;
-  }
-  .img-title {
-    width: 230px;
-    padding-bottom: 50px;
+    height: 10rem;
+    padding: 2rem 0 3rem;
   }
   .card .content p:nth-child(1) {
     font-size: 13px;
   }
-  .card .content p:nth-child(3) {
-    font-size: 11px;
+  .content, .photos-card {
+    width: 85%;
   }
 }

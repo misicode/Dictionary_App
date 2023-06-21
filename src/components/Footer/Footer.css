@@ -1,8 +1,7 @@
 .container-footer {
-  display: flex;
   height: 30px;
   width: 100%;
-  justify-content: center;
+  text-align: center;
 }
 .credits {
   font-size: 14px;
@@ -23,6 +22,7 @@
 @media only screen and (max-width: 480px) {
   .credits {
     margin: 25px 3rem 15px;
+    height: auto;
     font-size: 12px;
   }
 }
