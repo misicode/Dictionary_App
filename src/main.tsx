@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import ThemeProvider from "./providers/theme.provider.tsx";
 
-import "./assets/variables.css";
+import "./assets/Variables.css";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
