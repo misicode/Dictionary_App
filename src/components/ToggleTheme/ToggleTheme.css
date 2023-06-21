@@ -1,69 +1,111 @@
 .switch {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
+  justify-self: end;
+  width: 60px;
+  height: 27px;
+}
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-bg);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  cursor: pointer;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  left: -10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: var(--white)
+    url("https://img.icons8.com/material-two-tone/452/do-not-disturb-2.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input:checked + .slider {
+  background-color: var(--toggle-bg);
+}
+input:checked + .slider:before {
+  transform: translateX(42px);
+  -ms-transform: translateX(42px);
+  -webkit-transform: translateX(42px);
+  background: var(--white)
+    url("https://img.icons8.com/material-two-tone/452/sun--v1.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .switch {
     width: 50px;
     height: 25px;
+  }
+  .slider:before {
+    height: 32px;
+    width: 32px;
+    background-size: 18px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    -webkit-transform: translateX(35px);
+    background-size: 18px;
+  }
 }
-
-.switch input {
-    width: 0;
-    height: 0;
-    opacity: 0;
+@media only screen and (max-width: 640px) {
+  .switch {
+    width: 45px;
+    height: 23px;
+  }
+  .slider:before {
+    height: 28px;
+    width: 28px;
+    background-size: 15px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(32px);
+    -ms-transform: translateX(32px);
+    -webkit-transform: translateX(32px);
+    background-size: 15px;
+  }
 }
-
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--toggle-dark-bar);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 30px;
-    width: 30px;
-    left: -4px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    box-shadow: 0 0px 15px var(--shadow);
-    background: var(--white) url('https://img.icons8.com/material-two-tone/452/do-not-disturb-2.png');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-  
-input:checked + .slider {
-    background-color: var(--toggle-light-bar);
-}
-  
-input:focus + .slider {
-    box-shadow: 0 0 1px var(--toggle-light-bar);
-}
-  
-input:checked + .slider:before {
-    transform: translateX(29px);
-    -ms-transform: translateX(29px);
-    -webkit-transform: translateX(29px);
-    background: var(--white) url('https://img.icons8.com/material-two-tone/452/sun--v1.png');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
+@media only screen and (max-width: 480px) {
+  .switch {
+    width: 35px;
+    height: 18px;
+  }
+  .slider:before {
+    height: 23px;
+    width: 23px;
+    background-size: 12px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -webkit-transform: translateX(25px);
+    background-size: 12px;
+  }
 }

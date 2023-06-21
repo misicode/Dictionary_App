@@ -1,0 +1,44 @@
+.result-word {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 55px 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 20px;
+}
+.result-word button {
+  margin: 5px 0 0;
+  grid-row: 1 / 3;
+  color: var(--white);
+  font-size: 17px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-block {
+  cursor: not-allowed !important;
+}
+.result-word h2 {
+  font-size: 32px;
+}
+.result-word p {
+  font-size: 14px;
+}
+.result-meaning {
+  padding: 20px 0;
+}
+.syn-content {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+.syn-content > strong {
+  font-size: 14.5px;
+}
+@media only screen and (max-width: 768px) {
+  .syn-content {
+    font-size: 13px;
+  }
+  .syn-content > strong {
+    font-size: 13.5px;
+  }
+}
