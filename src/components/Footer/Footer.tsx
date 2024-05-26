@@ -4,11 +4,11 @@ const year: number = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="container-footer">
-      <p className="credits">
-        © { year } Learning and Programming | Coded by{" "}
+    <footer>
+      <p>
+        ⓒ { year } Learning and Programming | Coded by{" "}
         <a
-          href="https://github.com/misicode/TL-Dictionary"
+          href="https://github.com/misicode/DictionaryApp"
           target="_blank"
           rel="noreferrer"
         >

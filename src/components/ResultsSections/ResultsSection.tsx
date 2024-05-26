@@ -20,7 +20,7 @@ const ResultsSection = ({
         <button 
           onClick={ handlePlay }
           className={ audio ? "" : "btn-block" }
-          disabled={ audio ? false : true }
+          disabled={ audio === undefined }
           type="button"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
@@ -35,8 +35,8 @@ const ResultsSection = ({
       { 
         meanings.map(({ partOfSpeech, definitions, synonyms }, index) => {
           return (
-            <div key={ index } className="result-meaning">
-              <Meaning speech={ partOfSpeech } definitions={ definitions } />
+            <div key={ `${ word }-${ index }` } className="result-meaning">
+              <Meaning word={ word } speech={ partOfSpeech } definitions={ definitions } />
               { synonyms.length === 0
                 ? null
                 : (

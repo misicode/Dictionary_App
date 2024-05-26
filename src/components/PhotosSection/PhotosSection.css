@@ -1,26 +1,26 @@
 .content-photos {
-  background: var(--primary);
-  transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
+  background: var(--primary);
+  transform: translateY(-10px);
 }
 .photos-card {
-  display: grid;
-  width: 75%;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 auto;
   row-gap: 15px;
+  width: 75%;
 }
 .photo img {
-  width: 100%;
   border-radius: 10px;
+  width: 100%;
 }
 .svg-b {
-  transform: translateY(-12px);
   -ms-transform: translateY(-12px);
   -webkit-transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 @media only screen and (max-width: 768px) {
   .photos-card {

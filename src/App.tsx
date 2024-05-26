@@ -1,16 +1,19 @@
-import Dictionary from "./pages/Dictionary";
-import Header from "./components/Header/Header";
+import { Footer, Header } from "./components";
 
-import Footer from "./components/Footer/Footer";
+import Dictionary from "./pages/Dictionary";
+
+import "./App.css";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Dictionary />
+    <div className="app">
+      <div>
+        <Header />
+        <Dictionary />
+      </div>
       <Footer />
-    </>
+    </div>
   );
-};
+}
 
 export default App;

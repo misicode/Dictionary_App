@@ -1,28 +1,28 @@
-.container-footer {
-  height: 30px;
-  width: 100%;
+footer {
+  margin: 15px 0;
   text-align: center;
 }
-.credits {
+footer > p {
+  color: var(--font-auxiliar);
   font-size: 14px;
   font-weight: 600;
-  color: var(--font-auxiliar);
 }
-.credits > a,
-.credits > a:-webkit-any-link {
-  font-weight: 700;
+footer > p > a,
+footer > p > a:-webkit-any-link {
   color: var(--font-primary);
+  font-weight: 700;
   text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
-  .credits {
+  footer > p {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .credits {
-    margin: 25px 3rem 15px;
-    height: auto;
+  footer {
+    margin: 25px 1.25rem 15px;
+  }
+  footer > p {
     font-size: 12px;
   }
 }

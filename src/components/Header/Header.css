@@ -1,7 +1,7 @@
 header {
+  background: var(--primary);
   padding: 50px 4rem 0;
   text-align: right;
-  background: var(--primary);
 }
 @media only screen and (max-width: 768px) {
   header {

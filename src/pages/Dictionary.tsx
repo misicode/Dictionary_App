@@ -48,7 +48,7 @@ const Dictionary = () => {
       }
       {
         (photosData)
-        ? <PhotosSection data={ photosData } />
+        ? <PhotosSection word={ word } data={ photosData } />
         : null
       }
     </>

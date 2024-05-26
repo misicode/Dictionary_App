@@ -1,5 +1,7 @@
-import { ThemeContext } from "../contexts/theme.context";
+import { useMemo } from "react";
 import { useTheme } from "../hooks/useTheme";
+
+import { ThemeContext } from "../contexts/theme.context";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -7,9 +9,11 @@ type ThemeProviderProps = {
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const { theme, toggleTheme } = useTheme();
+  
+  const value = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={ value }>
       { children }
     </ThemeContext.Provider>
   );

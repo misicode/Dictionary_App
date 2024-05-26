@@ -1,19 +1,25 @@
 .result-word {
+  column-gap: 20px;
   display: grid;
-  margin-bottom: 20px;
   grid-template-columns: 55px 1fr;
   grid-template-rows: 1fr auto;
-  column-gap: 20px;
+  margin-bottom: 20px;
 }
 .result-word button {
-  margin: 5px 0 0;
-  grid-row: 1 / 3;
-  color: var(--white);
-  font-size: 17px;
   background: var(--secondary);
-  border: none;
   border-radius: 50%;
+  border: none;
+  color: var(--white);
   cursor: pointer;
+  font-size: 17px;
+  grid-row: 1 / 3;
+  height: 55px;
+  margin: 5px 0 0;
+  width: 55px;
+}
+.result-word button:disabled,
+.result-word button[disabled] {
+  opacity: .7;
 }
 .btn-block {
   cursor: not-allowed !important;
@@ -28,8 +34,8 @@
   padding: 20px 0;
 }
 .syn-content {
-  margin: 10px 0 0;
   font-size: 14px;
+  margin: 10px 0 0;
 }
 .syn-content > strong {
   font-size: 14.5px;

@@ -1,12 +1,13 @@
 import { Photos } from "../../types";
 
-import "./PhotosSections.css";
+import "./PhotosSection.css";
 
 type PhotosSectionProps = {
+  word: string,
   data: Photos,
 };
 
-const PhotosSection = ({ data: { photos } }: PhotosSectionProps) => {
+const PhotosSection = ({ word, data: { photos } }: PhotosSectionProps) => {
   return (
     <>
       <svg width="100%" height="100%" id="svg" viewBox="0 100 1440 300" xmlns="http://www.w3.org/2000/svg" className="svg-wave transition duration-300 ease-in-out delay-150">
@@ -17,7 +18,7 @@ const PhotosSection = ({ data: { photos } }: PhotosSectionProps) => {
           {
             photos.map(({ src, alt }, index) => {
               return (
-                <div key={ index } className="photo">
+                <div key={ `${word}-photo-${index}` } className="photo">
                   <a href={ src.original } target="_blank" rel="noopener noreferrer">
                     <img src={ src.landscape } alt={ alt } />
                   </a>
