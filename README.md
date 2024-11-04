@@ -1,6 +1,6 @@
 <!-- PROJECT PRESENTATION -->
 <div align="center">
-  <a href="https://github.com/misicode/DictionaryApp">
+  <a href="https://github.com/misicode/Dictionary_App">
     <img src="./public/favicon.ico" alt="Logo Icon" width="80" height="80">
   </a>
 
@@ -10,9 +10,9 @@
     <span>Aplicación de diccionario</span><br>
     <a href="https://misicode-dictionary.netlify.app">Ver Demo</a>
     |
-    <a href="https://github.com/misicode/DictionaryApp/issues">Reportar Bug</a>
+    <a href="https://github.com/misicode/Dictionary_App/issues">Reportar Bug</a>
     |
-    <a href="https://github.com/misicode/DictionaryApp/issues">Solicitar Feature</a>
+    <a href="https://github.com/misicode/Dictionary_App/issues">Solicitar Feature</a>
   </p>
 </div><br>
 
@@ -26,12 +26,12 @@ Aplicación web desarrollada con React que consume la API de [Free Dictionary][d
 
 | Herramienta                                       | Descripción                                                       | Versión |
 | ------------------------------------------------- | ----------------------------------------------------------------- | ------- |
-| [![React][react-badge]][react-url]                | Biblioteca de JavaScript para construir las interfaces de usuario | 18.2.0  |
-| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.2.0   |
-| [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
+| [![React][react-badge]][react-url]                | Biblioteca de JavaScript para construir las interfaces de usuario | 18.3.1  |
+| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.4.10  |
+| [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.6.2   |
 | [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.5    |
 | [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 10.5.0  |
-| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.89.1  |
+| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.95.1  |
 
 ### Vista previa
 
@@ -66,7 +66,7 @@ Visual Studio Code
 2. Descargue o clone este repositorio.
 
    ```sh
-   git clone https://github.com/misicode/DictionaryApp.git
+   git clone https://github.com/misicode/Dictionary_App.git
    ```
 
 3. Instale todos los paquetes NPM.
@@ -140,7 +140,7 @@ _Desarrollado por_ **Alessandra Mincia**
 <!-- ACKNOWLEDGMENTS -->
 ## 📝 Agradecimientos
 
-La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes][shecodes-url]. Para obtener más información detallada de este programa visite el siguiente [enlace][shecodes-react-url].
+La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes][shecodes-url].
 
 
 <!-- MARKDOWN LINKS -->
@@ -166,4 +166,3 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [linkedin-badge]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/misicode
 [shecodes-url]: https://www.shecodes.io
-[shecodes-react-url]: https://www.shecodes.io/react
